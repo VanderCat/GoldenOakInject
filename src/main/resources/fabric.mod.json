@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "golden-oak-inject",
+  "version": "${version}",
+  "name": "Golden Oak Injection",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/VanderCat/GoldenOakInject"
+  },
+  "license": "MIT",
+  "icon": "assets/golden-oak-inject/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.vandercat.goldenoakinject.client.GoldenOakInjectionClient"
+    ],
+    "server": [
+      "ru.vandercat.goldenoakinject.server.GoldenOakInjectionServer"
+    ],
+    "preLaunch": [
+      "ru.vandercat.goldenoakinject.GoldenOakInjection"
+    ]
+  },
+  "depends": {
+    "minecraft": ">=1.19"
+  },
+  "mixins": [
+    "goldenoak.mixins.json"
+  ]
+}
